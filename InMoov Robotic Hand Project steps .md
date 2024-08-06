@@ -8,11 +8,10 @@ Welcome to the InMoov Robotic Hand project! This README will guide you through t
 3. [3D Printing the Parts](#3d-printing-the-parts)
 4. [Circuit Diagram](#circuit-diagram)
 5. [Assembly Instructions](#assembly-instructions)
-6. [Software Setup](#software-setup)
-7. [Testing and Calibration](#testing-and-calibration)
-8. [Additional Resources](#additional-resources)
-9. [Contributing](#contributing)
-10. [License](#license)
+6. [Testing and Calibration](#testing-and-calibration)
+7. [Additional Resources](#additional-resources)
+8. [Contributing](#contributing)
+9. [License](#license)
 
 ## Project Overview
 
@@ -87,37 +86,6 @@ Below is a simplified circuit diagram for connecting the servomotors to the Ardu
 
 4. **Testing Joints**:
    - Manually check the flexibility and movement of each joint.
-
-## Software Setup
-
-1. **Install Arduino IDE**: Download and install the [Arduino IDE](https://www.arduino.cc/en/software).
-2. **Upload Code**:
-   - Open the provided Arduino sketch (or create a new one).
-   - Define the servo connections and movements.
-   - Upload the code to the Arduino.
-
-```cpp
-#include <Servo.h>
-
-Servo thumb, index, middle, ring, pinky;
-
-void setup() {
-  thumb.attach(9); // Attach the thumb servo to pin 9
-  index.attach(10); // Attach the index servo to pin 10
-  middle.attach(11); // Attach the middle servo to pin 11
-  ring.attach(12); // Attach the ring servo to pin 12
-  pinky.attach(13); // Attach the pinky servo to pin 13
-}
-
-void loop() {
-  thumb.write(90); // Move thumb to middle position
-  index.write(90); // Move index to middle position
-  middle.write(90); // Move middle to middle position
-  ring.write(90); // Move ring to middle position
-  pinky.write(90); // Move pinky to middle position
-  delay(1000); // Wait for a second
-}
-```
 
 ## Testing and Calibration
 
